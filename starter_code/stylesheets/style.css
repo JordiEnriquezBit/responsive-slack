@@ -5,3 +5,72 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+body{
+    margin: 0;
+    padding: 0;
+    position: ;
+}
+
+nav{
+    background:  white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 7vh;
+    border-bottom: 1px solid #5b5e6d;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+}
+nav img{
+    height: 5em;
+}
+nav i{
+    padding-right: 1em;
+}
+
+@media (max-width: 768px){
+    nav ul{
+        display: none;
+    }
+   
+    nav i:nth-last-child(1){
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-flow: column;
+        padding-top: 8vh;
+    }
+    header > *{
+        order: 4;
+
+    }
+    header h1{
+        order: 0;
+    }
+
+    #headerP1    {
+        order: 1;
+    }
+
+    header input{
+        width: 300px;
+        padding: 0;
+        order: 2;
+    }
+
+    header button{
+        background: red;
+        width: 300px;
+        order: 3;
+    }
+
+    header img{
+        order: 6;
+    }
+}
+
