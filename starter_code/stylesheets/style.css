@@ -9,15 +9,22 @@ nav grey: #5b5e6d;
 body{
     margin: 0;
     padding: 0;
-    position: ;
 }
 
+.grey{
+    color: #5b5e6d;
+}
+
+.paddingLR{
+    padding-left: 2em;
+    padding-right: 2em;
+}
 nav{
     background:  white;
-    position: fixed;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     height: 7vh;
     border-bottom: 1px solid #5b5e6d;
     padding-top: 1em;
@@ -28,49 +35,180 @@ nav img{
     height: 5em;
 }
 nav i{
-    padding-right: 1em;
+    color:  #5b5e6d;
 }
 
 @media (max-width: 768px){
+
+    /*       NAV          */
+
+
     nav ul{
         display: none;
     }
+   
    
     nav i:nth-last-child(1){
         display: none;
     }
 
+
+    /*        HEADER          */
+
+
+
     header{
         display: flex;
-        flex-flow: column;
-        padding-top: 8vh;
+        flex-flow:  wrap;
+        /*padding-top: 8vh;*/
     }
     header > *{
-        order: 4;
+        order: 10;
 
     }
     header h1{
         order: 0;
+        
     }
 
     #headerP1    {
+        font-size: x-large;
         order: 1;
     }
 
+    
     header input{
-        width: 300px;
-        padding: 0;
+        margin-top: 15px;
+        padding: 25px;
+        flex: 1 100%;
+        margin-bottom: 30px;
         order: 2;
     }
 
     header button{
-        background: red;
-        width: 300px;
+        background: #192592;
+        color: white;
+        padding: 25px;
+        font-size: medium;
+        font-weight: 700;
+        letter-spacing: 1.5px;
         order: 3;
+        flex: 1 100%;
+        
+    }
+
+    header p:nth-last-child(1){
+        order: 3;
+        flex: 1;
+        text-align: center;
+       
     }
 
     header img{
+        margin-top: 35px;
+        flex: 1;
+        width: 100%;
         order: 6;
     }
+
+
+
+    /*       MAIN          */
+
+
+
+    main{
+        display: flex;
+        flex-flow:  wrap;
+        
+    }
+
+    main div:nth-child(1){
+        padding: 0;
+        margin: 0;
+        background: #F4F3F4;
+        order: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 100%;
+        text-align: center;
+        padding-top: 50px;
+        
+    }
+
+    main div:nth-child(1) h2{
+        order: 1;
+        flex: 1 100%;
+        font-size: 35px;
+        margin-left: 30px;
+        margin-bottom: 0;
+
+
+
+    }
+
+    main div:nth-child(1) p{
+        margin-top: 20px;
+
+        order: 1;
+        flex: 1 100%;
+        font-size: x-large;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    main div:nth-child(1) button{
+
+        order: 3;
+        flex: 1 100%;
+        background: white;
+        color: #192592;
+
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 25px;
+        padding: 25px;
+        font-size: 20px;
+        font-weight: 700;
+
+        margin-bottom: 10px;
+    }
+
+
+    main div:nth-child(1) div{
+        
+       width: 100%;        
+       padding: 60px;
+       margin-left: 2em;
+       margin-right: 2em;
+       border-bottom: 1px solid gray;
+    }
+    main div:nth-child(1) div img{
+        height: 41px;
+     }
+
+     main div:nth-child(1) div:last-child{
+        
+       border-bottom: none;
+       padding-bottom: 120px;
+     }
+
+    main div:nth-child(1) > *{
+        order: 10;
+
+    }
+
+    main div:nth-child(2){
+        padding: 0;
+        margin: 0;
+        order: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 100%;
+        text-align: center;
+        padding-top: 50px;
+        
+    }
+
 }
 
