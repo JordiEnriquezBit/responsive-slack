@@ -1,5 +1,11 @@
 # Responsive Slack
 
+## LINK
+
+https://jordienriquezbit.github.io/responsive-slack/starter_code/
+
+
+
 ## Introducción
 
 Clonaremos la _landing page_ de Slack implementando su comportamiento __flexible__ 
