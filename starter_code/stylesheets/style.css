@@ -38,6 +38,445 @@ nav i{
     color:  #5b5e6d;
 }
 
+ /*       NAV          */
+
+
+ nav ul{
+    display: none;
+}
+
+
+nav i:nth-last-child(1){
+    display: none;
+}
+
+
+/*        HEADER          */
+
+
+
+header{
+    display: flex;
+    flex-flow:  wrap;
+    /*padding-top: 8vh;*/
+}
+header > *{
+    order: 10;
+
+}
+header h1{
+    order: 0;
+    
+}
+
+#headerP1    {
+    font-size: x-large;
+    order: 1;
+}
+
+
+header input{
+    margin-top: 15px;
+    padding: 25px;
+    flex: 1 100%;
+    margin-bottom: 30px;
+    order: 2;
+    border-radius: 5px;
+    border: 2px groove #fafafa;
+
+}
+
+header button{
+    background: #192592;
+    color: white;
+    padding: 25px;
+    font-size: medium;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    order: 3;
+    flex: 1 100%;
+    
+}
+
+header p:nth-last-child(1){
+    order: 3;
+    flex: 1 100%;
+    text-align: center;
+   
+}
+
+header img{
+    margin-top: 35px;
+    flex: 1;
+    width: 100%;
+    order: 6;
+}
+
+
+
+/*       MAIN          */
+
+
+
+main{
+    display: flex;
+    flex-flow:  wrap;
+    padding-bottom: 100px;
+   border-bottom: 2px groove #fafafa;
+    
+}
+
+main .paddingLR:nth-child(1){
+    padding: 0;
+    margin: 0;
+    background: #F4F3F4;
+    order: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 100%;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+main div:nth-child(1) h2{
+    order: 1;
+    flex: 1 100%;
+    font-size: 35px;
+    margin-left: 30px;
+    margin-bottom: 0;
+
+
+
+}
+
+main div:nth-child(1) p{
+    margin-top: 20px;
+
+    order: 1;
+    flex: 1 100%;
+    font-size: x-large;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+main div:nth-child(1) button{
+
+    order: 3;
+    flex: 1 100%;
+    background: white;
+    color: #192592;
+
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 25px;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+main div:nth-child(1) div{
+    
+    
+   padding: 45px;
+   margin-left: 2em;
+   margin-right: 2em;
+   border-bottom: 1px solid gray;
+}
+main div:nth-child(1) div img{
+    height: 41px;
+ }
+
+ main div:nth-child(1) div:last-child{
+    
+   border-bottom: none;
+   padding-bottom: 120px;
+ }
+
+main div:nth-child(1) > *{
+    order: 10;
+
+}
+
+main div:nth-child(2){
+    padding: 0;
+    margin: 0;
+    order: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 100%;
+
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 2em;
+   margin-right: 2em;
+   
+
+
+    
+}
+
+
+
+main div:nth-child(2) p{
+    flex: 1 100%;
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+}
+
+main div:nth-child(2) p:first-child{
+    font-size: xx-large;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+main div:nth-child(2) input{
+    margin-top: 15px;
+    padding: 25px;
+    flex: 1 100%;
+    margin-bottom: 30px;
+    border: 2px groove #fafafa;
+    border-radius: 5px;
+}
+
+main div:nth-child(2) button{
+    background: #192592;
+    color: white;
+    padding: 25px;
+    font-size: medium;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    order: 3;
+    border-radius: 5px;
+    flex: 1 100%;
+}
+
+
+footer{
+    display: flex;
+    flex-flow:  wrap;
+    margin: 0;
+    padding: 0;
+    color: #5b5e6d;
+}
+
+footer div.paddingLR:nth-child(1){
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow:  wrap;
+    
+
+
+}
+
+footer div:nth-child(1) div{
+    flex: 1 100%; 
+    padding: 0;
+    margin: 0;
+   
+}
+
+footer div:nth-child(1) div img{
+ 
+    padding: 0;
+    margin: 0;
+    margin-top: -55px;
+    margin-left: -50px;
+
+}
+
+
+footer div:nth-child(1) ul{
+   flex: 1 50%;
+   padding: 0;
+}
+
+
+ footer div:nth-child(1) li{
+    list-style: none;
+    text-decoration: none;
+    padding: 20px;
+    font-size: x-large;
+     
+    
+ }
+
+ footer div:nth-child(1) ul li:first-child{
+    font-weight: 900;
+ }
+
+ footer div:nth-child(2){
+     background:#F4F3F4;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-flow:  wrap;
+     flex: 1 100%;
+     text-align: center;
+     justify-content: center;
+    padding-bottom: 20px;
+}
+
+footer div:nth-child(2) ul{
+   flex: 1 100%;
+   display: flex;
+   justify-content: center;
+   padding-right: 2em;
+
+}
+
+footer div:nth-child(2) li{
+padding: 9px;
+list-style: none;
+text-decoration: none;
+font-size: x-large;
+font-weight: 600;    
+}
+
+footer div:nth-child(2)  div > *  {
+justify-content: center;
+flex: 1 100%;
+text-align: center;
+
+
+}
+
+
+footer div:nth-child(2) div div {
+flex: 1 34%;
+order: 0;
+text-align: right;
+padding-bottom: 15px;
+
+
+}
+footer div:nth-child(2) div img {
+height: 3em;
+
+}
+footer div:nth-child(2) div span {
+flex: 1 28%;
+
+padding-top: 8px;
+order: 0;
+font-size: x-large;
+font-weight: 600;
+padding-bottom: 15px;
+
+}
+
+footer div:nth-child(2) div  i:first-of-type {
+flex: 1 34%;
+
+padding: 0;
+margin: 0;
+order: 0;
+font-size: xx-large;
+text-align: left;
+padding-top: 8px;
+padding-bottom: 45px;
+
+
+}
+footer div:nth-child(2) div  i:nth-of-type(2) {
+padding: 0;
+margin: 0;
+order: 2;
+font-size: xx-large;
+text-align: right;
+flex: 1 34%;
+
+
+
+
+}
+
+footer div:nth-child(2) div  i:nth-of-type(3) {
+padding: 0;
+margin: 0;
+order: 2;
+font-size: xx-large;
+flex: 1 10%;
+
+
+
+}
+footer div:nth-child(2) div  i:nth-of-type(4) {
+padding: 0;
+margin: 0;
+order: 2;
+font-size: xx-large;
+text-align: left;
+flex: 1 34%;
+
+}
+
+
+@media (min-width: 768px){
+   
+    body{
+        background: ;
+    }
+    header input{
+        width: 40%;
+        flex: none;
+
+    }
+
+    header button{
+        
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        flex: none;
+        width: 30%;
+    }
+
+    main div.paddingLR:nth-child(2){
+        justify-content: space-between;
+    }
+
+    main div.paddingLR:nth-child(2) div:first-child{
+        flex: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    main div.paddingLR:nth-child(2) div:last-child{
+        flex: none;
+        justify-content: center;
+        align-content: flex-end;
+        flex: none;
+        margin: 0;
+        padding: 0;
+    }
+    main div:nth-child(2) input{
+        flex: none;
+        
+    }
+
+    main div:nth-child(2) button{
+        margin-top: 0.9em;
+        margin-bottom: 1.8em;
+        flex: none;
+    }
+
+    footer div:nth-child(1) ul{
+    
+        padding: 0;
+     }
+
+}
+@media (min-width: 961px){
+    body{
+        background: ;
+    }
+}
 @media (max-width: 768px){
 
     /*       NAV          */
@@ -102,7 +541,8 @@ nav i{
 
     header p:nth-last-child(1){
         order: 3;
-        flex: 1;
+        flex: 1 100%;
+
         text-align: center;
        
     }
@@ -128,7 +568,7 @@ nav i{
         
     }
 
-    main div:nth-child(1){
+    main .paddingLR:nth-child(1){
         padding: 0;
         margin: 0;
         background: #F4F3F4;
@@ -209,6 +649,8 @@ nav i{
         order: 0;
         display: flex;
         flex-wrap: wrap;
+        flex: 1 100%;
+        justify-content: center;
         text-align: center;
         padding-top: 50px;
         margin-left: 2em;
@@ -412,10 +854,9 @@ footer div:nth-child(2) div  i:nth-of-type(4) {
     font-size: xx-large;
     text-align: left;
     flex: 1 34%;
-
-
-    
-    
+ 
 }
+
 }
+
 
