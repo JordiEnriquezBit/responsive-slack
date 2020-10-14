@@ -417,10 +417,10 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 767px){
    
     body{
-        background: ;
+        background: red;
     }
     header input{
         width: 40%;
@@ -449,13 +449,14 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 
     
     main  div.paddingLR:nth-child(1) div{
-        flex: 1 30%;
+        flex: 1 35%;
+        
         margin: 0;
 
     }
 
     main  div.paddingLR:nth-child(1) div img{
-       
+        width: 50%;
     }
 
     main  div.paddingLR:nth-child(1) button{
@@ -520,7 +521,9 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 
     /*       NAV          */
 
-
+    body{
+        background: blue;
+    }
     nav ul{
         display: none;
     }
