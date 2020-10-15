@@ -136,6 +136,8 @@ nav i{
         flex-wrap: wrap;
         flex: 1 100%;
         text-align: center;
+        align-content: center;
+        justify-content: center;
         padding-top: 50px;
         
     }
@@ -178,23 +180,26 @@ nav i{
         margin-bottom: 10px;
     }
 
+    main div.paddingLR:nth-child(1) div  {
+        width: 100%;
 
-    main div.paddingLR:nth-child(1) div{
+    }
+    main div.paddingLR:nth-child(1) div div {
         
-       width: 100%;        
+        width: auto;
        padding: 45px;
        margin-left: 2em;
        margin-right: 2em;
        border-bottom: 1px solid gray;
     }
-    main div.paddingLR:nth-child(1) div img{
+    main div.paddingLR:nth-child(1) div div img{
         height: 41px;
      }
 
-     main div.paddingLR:nth-child(1) div:last-child{
+     main div.paddingLR:nth-child(1) div div:last-child{
         
        border-bottom: none;
-       padding-bottom: 120px;
+      /* padding-bottom: 120px;*/
      }
 
     main div.paddingLR:nth-child(1) > *{
@@ -275,7 +280,6 @@ nav i{
     }
 
     footer div.paddingLR:nth-child(1) div{
-        flex: 1 100%; 
         padding: 0;
         margin: 0;
        
@@ -292,7 +296,6 @@ nav i{
 
 
     footer div.paddingLR:nth-child(1) ul{
-       flex: 1 50%;
        padding: 0;
     }
     
@@ -417,13 +420,14 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 }
 
 
-@media (min-width: 767px){
+@media (min-width: 768px){
    
     body{
-        background: red;
+        background: ;
     }
     header input{
         width: 40%;
+        margin-right: 8px;
         flex: none;
 
     }
@@ -439,6 +443,12 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
     main{
         
     }
+    header p:nth-last-child(1){
+        text-align: left;
+        margin-top: -1em;
+       
+    }
+
     main  div.paddingLR:nth-child(1) {
         margin: 0;
         justify-content: center;
@@ -447,32 +457,52 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
     }
 
 
-    
-    main  div.paddingLR:nth-child(1) div{
-        flex: 1 35%;
-        
-        margin: 0;
-
+    main  div.paddingLR:nth-child(1) div {
+    display: flex;
+    flex-wrap: ;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
     }
 
-    main  div.paddingLR:nth-child(1) div img{
-        width: 50%;
+
+
+    main  div.paddingLR:nth-child(1) div  div img{
+        padding:0;
+        height: auto;
+        width: 80%;
+        
+    }
+
+    main  div.paddingLR:nth-child(1) div div {
+        height: 200px;
+        width: 45%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        
     }
 
     main  div.paddingLR:nth-child(1) button{
         margin-bottom: 70px;
     }
 
-    main  div.paddingLR:nth-child(1) div:nth-last-child(2){
+    main  div.paddingLR:nth-child(1) div div:nth-last-child(2){
         border-bottom: none;
     }
 
-    main  div.paddingLR:nth-child(1) div:nth-child(even){
+    main  div.paddingLR:nth-child(1) div div:nth-child(odd){
         border-right: 1px solid gray;
+        
         margin-left: 2em;
     }
 
-    main  div.paddingLR:nth-child(1) div:nth-child(odd){
+    main  div.paddingLR:nth-child(1) div div:nth-child(even){
         margin-right: 2em;
     }
     main div.paddingLR:nth-child(2){
@@ -505,9 +535,13 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
         flex: none;
     }
 
-
+    footer div.paddingLR:nth-child(1) div{
+    }
+    footer div.paddingLR:nth-child(1) div:last-child{
+        display: flex;
+    }
     footer div.paddingLR:nth-child(1) ul{
-
+        flex: 1 20%;
         padding: 0;
      }
 
@@ -662,9 +696,9 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
     }
 
 
-    main div.paddingLR:nth-child(1) div{
+    main div.paddingLR:nth-child(1) div div{
         
-       width: 100%;        
+       width: none;        
        padding: 45px;
        margin-left: 2em;
        margin-right: 2em;
@@ -674,7 +708,7 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
         height: 41px;
      }
 
-     main div.paddingLR:nth-child(1) div:last-child{
+     main div.paddingLR:nth-child(1)  div div:last-child{
         
        border-bottom: none;
        padding-bottom: 120px;
@@ -783,8 +817,12 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 
     }
 
-
-    footer div.paddingLR:nth-child(1) ul{
+    footer div.paddingLR:nth-child(1) div:last-child {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer div.paddingLR:nth-child(1) div:last-child ul{
+        
        flex: 1 50%;
        padding: 0;
     }
