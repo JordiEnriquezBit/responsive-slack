@@ -423,7 +423,7 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 @media (min-width: 768px){
    
     body{
-        background: ;
+        background: gray;
     }
     header input{
         width: 40%;
@@ -459,7 +459,7 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 
     main  div.paddingLR:nth-child(1) div {
     display: flex;
-    flex-wrap: ;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
     margin: 0;
@@ -546,11 +546,70 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
      }
 
 }
-@media (min-width: 961px){
-    body{
-        background: ;
+@media(min-width: 960px){
+    main  div.paddingLR:nth-child(1) div div {
+        height: 200px;
+        flex: 1  30%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid gray;
+
+    }
+    main  div.paddingLR:nth-child(1) div div:nth-child(odd){
+        margin-left: 0px;
+    }
+
+    main  div.paddingLR:nth-child(1) div div:nth-child(even){
+        margin-right: 0px;
+    }
+    main div.paddingLR:nth-child(1) div div {
+        
+     
+       border-bottom: 1px solid gray;
+    }
+    main  div.paddingLR:nth-child(1) div div:nth-last-child(3){
+        border-bottom: none;
+    }
+    main  div.paddingLR:nth-child(1) div div:last-child{
+        border-right: none;
+    }
+    main  div.paddingLR:nth-child(1) div div:nth-child(3){
+        border-right: none;
     }
 }
+@media(min-width: 1024px){
+    nav ul{
+       display: flex;
+       
+    }
+    nav li{
+        padding-right: 2em;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        
+        
+    }
+    nav li:last-child{
+        border: 1px solid gray;
+        padding: 15px;
+    }
+    nav i{
+        display: none !important;
+    }
+}
+/*
+@media (min-width: 961px){
+    body{
+        background: red;
+    }
+}*/
 @media (max-width: 768px){
 
     /*       NAV          */
