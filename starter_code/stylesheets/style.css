@@ -65,6 +65,7 @@ nav i{
 
     }
     header h1{
+        font-size: xxx-large;
         order: 0;
         
     }
@@ -270,10 +271,11 @@ nav i{
     }
 
     footer div.paddingLR:nth-child(1){
+        width: 100%;
         margin: 0;
         padding: 0;
         display: flex;
-        flex-flow:  wrap;
+        justify-content: space-around;
         
 
 
@@ -423,7 +425,6 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
 @media (min-width: 768px){
    
     body{
-        background: gray;
     }
     header input{
         width: 40%;
@@ -603,19 +604,46 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
     nav i{
         display: none !important;
     }
-}
-/*
-@media (min-width: 961px){
-    body{
-        background: red;
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-content: center;
+        align-self: center;
+        align-items: center;
     }
-}*/
+    
+    
+    header div {
+        width: 50%;
+    }
+    header div h1{
+        width: 40%;
+    }
+    header div p{
+        width: 50%;
+    }
+    header img {
+        flex: none;
+        width: auto ;
+        height: 600px;
+    }
+    header div input {
+        display: none;
+    }
+
+    footer div.paddingLR:nth-child(1) li{
+        padding-right: 80px;
+         
+        
+     }
+}
+
 @media (max-width: 768px){
 
     /*       NAV          */
 
     body{
-        background: blue;
     }
     nav ul{
         display: none;
