@@ -665,7 +665,9 @@ footer div.paddingLR:nth-child(2) div  i:nth-of-type(4) {
         /*padding-top: 8vh;*/
     }
     header > *{
-        order: 10;
+        display: flex;
+    order: 10;
+    flex-direction: column;
 
     }
     header h1{
